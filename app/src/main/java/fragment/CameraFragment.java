@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.karen.navdrawer.EnterInformation;
 import com.example.karen.navdrawer.R;
 
 /**
@@ -28,6 +29,8 @@ public class CameraFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_camera, container, false);
+        Intent infoIntent = new Intent(getActivity(), EnterInformation.class);
+        startActivity(infoIntent);
         Intent galleryIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(galleryIntent, RESULT_LOAD_IMAGE);
         return rootView;

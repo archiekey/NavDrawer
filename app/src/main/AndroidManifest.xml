@@ -54,7 +54,11 @@
             android:label="@string/title_activity_login_client" />
         <activity
             android:name=".LoginRealtor"
-            android:label="@string/title_activity_login_realtor"></activity>
+            android:label="@string/title_activity_login_realtor" />
+        <activity
+            android:name=".EnterInformation"
+            android:label="@string/title_activity_enter_information"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -25,4 +25,5 @@
         completions."
     </string>
     <string name="title_activity_login_realtor">Sign in</string>
+    <string name="title_activity_enter_information">EnterInformation</string>
 </resources>

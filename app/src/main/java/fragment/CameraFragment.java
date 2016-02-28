@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.karen.navdrawer.EnterInformation;
+import com.example.karen.navdrawer.MainActivityNavDrawer;
 import com.example.karen.navdrawer.R;
 
 /**
@@ -25,6 +26,7 @@ public class CameraFragment extends Fragment {
     static final int RESULT_LOAD_IMAGE = 1;
     public View rootView;
     String imgDecodableString;
+    String bitmapName;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -47,13 +49,17 @@ public class CameraFragment extends Fragment {
                 cursor.moveToFirst();
                 int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
                 imgDecodableString = cursor.getString(columnIndex);
+                bitmapName = imgDecodableString;
                 cursor.close();
                 ImageView imgView = (ImageView) rootView.findViewById(R.id.image_view);
                 imgView.setImageBitmap(BitmapFactory.decodeFile(imgDecodableString));
+
             } else {
                 Toast.makeText(rootView.getContext(), "Please select a picture", Toast.LENGTH_LONG).show();
             }}catch(Exception e) {
                 Toast.makeText(rootView.getContext(), "Something went wrong", Toast.LENGTH_LONG).show();
             }
+
     }
+
 }

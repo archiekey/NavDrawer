@@ -35,7 +35,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDlEFFBOAlnvVmNJvVl6TckaS-NyG9EjiQ" />
+            android:value="AIzaSyDIKHdt2leUGS9bj7cGsxzV421NGqzxbu0" />
 
         <activity
             android:name=".MainActivityNavDrawer"

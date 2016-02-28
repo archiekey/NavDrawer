@@ -25,8 +25,10 @@ public class selectLogin extends Activity {
         realtor_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(selectLogin.this, LoginRealtor.class);
-                startActivity(i);
+                //Intent i = new Intent(selectLogin.this, LoginRealtor.class);
+            //    startActivity(i);
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.eje_c.rajawalicardboard");
+                startActivity(launchIntent);
             }
         });
 

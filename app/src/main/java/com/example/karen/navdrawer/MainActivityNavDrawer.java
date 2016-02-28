@@ -91,10 +91,17 @@ public class MainActivityNavDrawer extends AppCompatActivity
           else if (id == R.id.nav_camera) {
             fm.beginTransaction().replace(R.id.content_frame, new CameraFragment()).commit();
 
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void openrenderer()
+    {
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.eje_c.rajawalicardboard");
+        startActivity(launchIntent);
+
     }
 }

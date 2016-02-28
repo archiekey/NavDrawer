@@ -22,5 +22,43 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_maps_info" />
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:text="Address: 1200 E California Blvd, Pasadena, CA 91125"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"
+        android:text="Price: $2,000,000,000"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        android:text="Square Feet: 739,000 meters squared"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="30dp"
+        android:text="1000 rooms/ 10 bathrooms"
+        />
+    <Button
+        android:id="@+id/Tour"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="110dp"
+        android:text="Home tour"/>
 
 </android.support.design.widget.CoordinatorLayout>
